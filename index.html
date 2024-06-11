@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feladatok</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+
+        <td id="szam"></td>
+        </tr>
+    </table>
+    <button onclick="novel()">+</button>
+    <button onclick="csokkent()">-</button>
+    <br />
+    <br />
+    <script>
+        let szam = 0;
+        const szamMezo = document.getElementById('szam');
+
+        function novel() {
+            szam++;
+            szamMezo.textContent = szam;
+        }
+
+        function csokkent() {
+            szam--;
+            szamMezo.textContent = szam;
+        }
+
+
+    </script>
+    <button onclick="()">Hozzáad</button>
+    <br />
+    <br />
+    <input type="text" value="Tej" id="bevasarlo1"><button onclick="torol(this)">X</button><br>
+    <input type="text" value="Kenyér" id="bevasarlo2"><button onclick="torol(this)">X</button>
+</body>
+</html>
